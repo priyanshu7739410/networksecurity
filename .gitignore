@@ -6,3 +6,8 @@ build/
 dist/
 logs/
 Artifacts/
+prediction_output/
+mlruns/
+.pytest_cache/
+valid_data/
+final_model/
