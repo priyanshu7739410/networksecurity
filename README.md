@@ -4,7 +4,7 @@ This repository contains a production-grade, end-to-end MLOps pipeline designed 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *   **Language**: Python 3.10
 *   **Web Framework**: FastAPI & Uvicorn
@@ -16,7 +16,7 @@ This repository contains a production-grade, end-to-end MLOps pipeline designed 
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```text
 network-security/
@@ -61,7 +61,7 @@ network-security/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 Ensure you have the following installed on your machine:
@@ -110,7 +110,7 @@ You can run individual stages for testing, which will instantiate training confi
 
 ---
 
-## 🖥️ Running the FastAPI Web Application
+## Running the FastAPI Web Application
 
 Start the API server using Uvicorn:
 ```bash
@@ -122,7 +122,7 @@ Open your browser and navigate to:
 
 ---
 
-## 🐳 Running in Docker (Docker Compose)
+## Running in Docker (Docker Compose)
 
 We use `docker-compose` to run the application with environment mapping and hot reloading:
 
@@ -141,7 +141,7 @@ We use `docker-compose` to run the application with environment mapping and hot 
 
 ---
 
-## 📊 Reading Input & Output Data
+## Reading Input & Output Data
 
 ### Input Specifications
 The prediction API expects a CSV file containing **30 feature columns** and optionally the `Result` target column (as defined in `data_schema/schema.yaml`). 
