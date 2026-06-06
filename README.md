@@ -51,6 +51,7 @@ network-security/
 ├── .env                    # Local environment secrets (Ignored by git)
 ├── .gitignore              # Files ignored by Git tracking
 ├── app.py                  # FastAPI Application Entrypoint
+├── clean.bat              # Windows cleanup batch script for local files/Docker
 ├── Dockerfile              # Container building instruction
 ├── docker-compose.yml      # Orchestrates local container service
 ├── Makefile                # Short CLI helpers for Docker commands
@@ -153,3 +154,18 @@ Columns include:
 When you perform predictions via the `/predict` route:
 1.  **On Screen**: It displays an HTML table listing the uploaded data alongside a new **`predicted_column`** containing `1` (Safe) or `0` (Phishing).
 2.  **Locally**: The predictions are exported to `prediction_output/output.csv` in the root workspace.
+
+---
+
+## Cleanup
+
+To clean up locally generated artifacts, logs, outputs, and cached Docker environments:
+
+*   **Windows**:
+    ```cmd
+    clean.bat
+    ```
+*   **Linux/macOS**:
+    ```bash
+    make clean
+    ```
