@@ -27,7 +27,6 @@ import mlflow
 from urllib.parse import urlparse
 
 import dagshub
-dagshub.init(repo_owner='priyanshu7739410', repo_name='networksecurity', mlflow=True)
 
 
 
@@ -44,6 +43,7 @@ class ModelTrainer:
         
     def track_mlflow(self,best_model,classificationmetric):
         try:
+            dagshub.init(repo_owner='priyanshu7739410', repo_name='networksecurity', mlflow=True)
             mlflow.set_registry_uri("https://dagshub.com/priyanshu7739410/networksecurity.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
             with mlflow.start_run():
